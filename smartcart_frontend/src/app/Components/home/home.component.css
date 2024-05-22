@@ -1,0 +1,35 @@
+.container {
+  min-height: 100vh;
+}
+
+.product-container {
+  width: 100%;
+}
+
+.bannerContainer {
+  background-color: #63bb80;
+}
+
+@media (min-width: 992px) {
+  .bannerDesc {
+    margin-left: 50px;
+  }
+}
+
+.shopNow {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+}
+
+.notFoundImg {
+  height: 45vh;
+  width: auto;
+}
+
+/* pagination css */
+.page-link {
+  border-radius: 100% !important;
+  margin: 5px;
+  color: #60ad56;
+}

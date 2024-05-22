@@ -1,0 +1,46 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold" routerLink="/home">SmartCart</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/my-order" title="My Orders"
+            [ngClass]="{ 'active-nav-item': activeNavItem === 'my-order' }">
+            <img src="../../../assets/images/myOrder.svg" alt="My Orders">
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/profile" title="Profile"
+            [ngClass]="{ 'active-nav-item': activeNavItem === 'profile' }">
+            <i class="bi bi-person"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/wishlist" title="Wishlist"
+            [ngClass]="{ 'active-nav-item': activeNavItem === 'wishlist' }">
+            <i class="bi bi-heart"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link position-relative" routerLink="/cart" title="Cart"
+            [ngClass]="{ 'active-nav-item': activeNavItem === 'cart' }">
+            <i class="bi bi-cart3"></i>
+            <span class="badge bg-danger position-absolute top-0 start-100 translate-middle">1</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link logout-button" (click)="handleLogout()">
+            LOGOUT
+            <!-- <i class="bi bi-box-arrow-right ms-1"></i> -->
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
