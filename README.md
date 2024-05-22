@@ -62,7 +62,7 @@ The virtual grocery store app is a web-based platform that enables customers to 
 
 To run the application locally, follow these steps:
 
-1. Clone the repository from GitHub: [Repository Link](https://github.com/ravi-patel57144/)
+1. Clone the repository from GitHub: [Repository Link](https://github.com/ravi-patel57144/SmartCart_OnlineGroceryStore.git)
 2. Navigate to the project directory.
 3. Install dependencies by running `npm install`.
 4. Start the development server with `ng serve`.
